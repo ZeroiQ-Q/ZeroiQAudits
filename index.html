@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./checklist.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ZeroiQ Audit</title>
+  </head>
+
+  <body>
+    <!-- Font weights : 300 - 400 - 700 - 900 -->
+
+    <div class="user-auth">
+      <p class="app-name label">ZeroiQ Solutions</p>
+
+      <div class="user-container">
+        <div class="login-section">
+          <div class="user-section">
+            <p class="dev-label">username :</p>
+            <input class="username" type="text" />
+          </div>
+          <div class="password-section">
+            <p class="dev-label">Password :</p>
+            <input class="password" type="password" />
+          </div>
+          <div class="login-button"><button class="login">login</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <header>
+        <p class="app-name">ZeroiQ Audits</p>
+      </header>
+
+      <main>
+        <section class="information-section">
+          <div class="owner-information">
+            <div class="owner">
+              <img class="icon" src="./user.svg" alt="" />
+              <p class="name">ukesh gyawali Statement</p>
+            </div>
+            <div class="owner">
+              <img class="icon" src="./phone.svg" alt="" />
+              <p class="phone-number">+977 9805468098</p>
+            </div>
+          </div>
+          <div class="capital-information">
+            <div class="total-debit-section">
+              <p class="cashflow-label">Total Debit</p>
+              <p class="total-debit-amount amount-label">Rs. 0</p>
+            </div>
+            <div class="total-credit-section">
+              <p class="cashflow-label">Total Credit</p>
+              <p class="total-credit-amount amount-label">Rs. 0</p>
+            </div>
+            <div class="net-balance-section">
+              <p class="cashflow-label">Net Balance</p>
+              <p class="net-balance-amount amount-label">Rs. 0</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="statement-date-section">
+          <img class="icon" src="./calendar.svg" alt="" />
+          <p class="statement-date">Date range : ( dd-mm-yy )</p>
+        </div>
+
+        <div class="total-entries-section">
+          <p class="total-entries">Total 0 entries</p>
+        </div>
+
+        <div class="table-section">
+          <div class="grid-heading">
+            <div class="table-labels"><p>date</p></div>
+            <div class="table-labels"><p>particular</p></div>
+            <div class="table-labels"><p>remarks</p></div>
+            <div class="table-labels"><p>debit</p></div>
+            <div class="table-labels"><p>Credit</p></div>
+            <div class="table-labels"><p>Balance</p></div>
+          </div>
+          <div class="grid-data-section"></div>
+          <div class="grid-input-section">
+            <div class="inputs"><input class="date" type="date" /></div>
+            <div class="inputs"><input class="particular" type="text" /></div>
+            <div class="inputs"><input class="remarks" type="text" /></div>
+            <div class="inputs"><input class="debit" type="number" /></div>
+            <div class="inputs"><input class="credit" type="number" /></div>
+            <div class="add-button"><button class="add">+iNCLUDE</button></div>
+          </div>
+          <p class="warnings"></p>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p class="dev">ZeroiQ © 2023</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
